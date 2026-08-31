@@ -14,14 +14,14 @@
     <!-- NAVBAR -->
     <nav class="navbar">
 
-        <div class="logo">
-            BookHaven
+        <div class="nav-logo">
+            <img src="assets\Book_Haven.png.png" alt="BookHsven">
         </div>
 
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Explore</a>
-            <a href="#">Genres</a>
+            <a href="#home">Home</a>
+            <a href="#recommended-books">Explore</a>
+            <a href="#genres">Genres</a>
             <a href="#">My Library</a>
         </div>
 
@@ -38,7 +38,11 @@
 
 
     <!-- HERO SECTION -->
-    <section class="hero">
+    <section class="hero" id="home">
+
+        <div class="hero-background">
+            <img src="assets\Bookshelf Wallpaper Desktop HD.jpe" alt="">
+        </div>
 
         <div class="hero-content">
 
@@ -56,7 +60,7 @@
                 Explore books curated just for you.
             </p>
 
-            <button class="explore-btn">
+            <button class="explore-btn" onclick="document.getElementById('recommended-books').scrollIntoView({behavior:'smooth'})">
                 Explore Books
             </button>
 
@@ -110,7 +114,7 @@
 
 
     <!-- BROWSE GENRES -->
-    <section class="genre-section">
+    <section class="genre-section" id="genres">
 
         <div class="section-header">
 
@@ -145,14 +149,30 @@
                 <h2>Popular This Week</h2>
             </div>
 
-            <a href="#" class="view-all">
+            <a href="#recommended-books" class="view-all">
                 View all →
             </a>
 
         </div>
 
         <div class="book-grid" id="popular-books">
-            <!-- Books will be added here -->
+            <div class="book-card">
+    <div class="book-cover">
+        <img src="assets\BehindHerLies.jpg" alt="Behind Her Lies">
+    </div>
+</div>
+
+<div class="book-card">
+    <div class="book-cover">
+        <img src="assets\OneLastTime.jpg" alt="One Last Time">
+    </div>
+</div>
+
+<div class="book-card">
+    <div class="book-cover">
+        <img src="assets\theTerrorist.jpg" alt="The Terrorist">
+    </div>
+</div>
         </div>
 
     </section>
@@ -163,6 +183,7 @@
 
         <div class="logo">
             BookHaven
+            
         </div>
 
         <p>
