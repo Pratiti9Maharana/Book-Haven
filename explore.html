@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Books | BookHaven</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav-logo">
+        <div clas="nav-logo">
+            <img src="assets\Book_Haven.png.png" alt="BookHaven">
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="explore.html#genres">Genres</a>
+            <a href="library.html">My Library</a>
+
+        </div>
+
+        <div class="nav-actions">
+            <button id="search-btn">
+                <img src="assets\search-square-svgrepo-com (1).svg" alt="Search">
+            </button>
+        </div>
+    </nav>
+
+    <!-- EXPLORE PAGE   -->
+     <section class="explore-section">
+        <div class="section-header">
+            <div>
+                <p class="section-label">DISCOVER</p>
+                <h1>Explore Books</h1>
+            </div>
+        </div>
+
+        <!-- SEARCH-->
+         <div class="search-container">
+            <input
+                type="text"
+                id="book-search"
+                placeholder="Search for a book..."
+                >
+         </div>
+
+         <!--GENRES-->
+         <div class="genre-grid" data-genre="genres">
+            <button class="genre-card" data-genre="Fiction">
+                Fiction
+            </button>
+
+            <button class="genre-card" data-genre="Mystery">
+                Mystery
+            </button>
+
+            <button class="genre-card" data-genre="Romance">
+                Romance
+            </button>
+
+             <button class="genre-card" data-genre="Fantasy">
+                Fantasy
+            </button>
+
+            <button class="genre-card" data-genre="Thriller">
+                Thriller
+            </button>
+
+            <button class="genre-card" data-genre="Science Fiction">
+                Science Fiction
+            </button>
+         </div>
+
+                 <!-- BOOKS -->
+
+        <div class="book-grid" id="explore-books">
+
+            <!-- JavaScript will add books here -->
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="logo">
+            BookHaven
+        </div>
+
+        <p>
+            A place for every story.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+         
+
+     </section>
+    
+</body>
+</html>
